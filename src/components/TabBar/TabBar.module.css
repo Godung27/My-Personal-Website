@@ -1,0 +1,42 @@
+.tab-bar {
+  background-color: rgba(33, 37, 41, 0.7);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+  align-items: center;
+  transition: 0.3s background-color;
+}
+
+.scrolled {
+  background-color: rgb(33, 37, 41);
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s color;
+}
+
+.menu a:hover {
+  color: #FF4D00;
+}
+
+.menu a:active {
+  text-decoration: underline;
+}
+
+
