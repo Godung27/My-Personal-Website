@@ -5,10 +5,16 @@
   top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0 20px;
   align-items: center;
   transition: 0.3s background-color;
+}
+
+.logo {
+  padding: 14px;
+  color: white;
+  font-weight: bold;
 }
 
 .scrolled {
@@ -39,4 +45,8 @@
   text-decoration: underline;
 }
 
-
+@media(max-width: 769px) {
+  .menu {
+  display: none;
+  }
+}

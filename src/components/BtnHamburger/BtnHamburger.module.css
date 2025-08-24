@@ -1,0 +1,33 @@
+.btnHamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 17px 20px;
+  width: 27px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  box-sizing: content-box; 
+}
+
+.bar {
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  transform-origin: center;
+  transition: 0.3s transform, 0.3s opacity;
+}
+
+.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+  transform: rotateX(-20px);
+}
+
+.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
