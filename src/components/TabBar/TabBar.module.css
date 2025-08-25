@@ -23,7 +23,7 @@
 
 .menu {
   display: flex;
-  gap: 20px;
+  gap: 5px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -41,8 +41,9 @@
   color: #FF4D00;
 }
 
-.menu a:active {
-  text-decoration: underline;
+.active {
+  border-bottom: 2px solid #FF4D00;
+  color: #FF4D00;
 }
 
 @media(max-width: 769px) {

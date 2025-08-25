@@ -1,24 +1,38 @@
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import BtnHamburger from "../BtnHamburger/BtnHamburger";
 import classes from "./TabBar.module.css";
 
 export default function TabBar() {
+  const preScrolledRef = useRef(true);
   const [scrolled, setScrolled] = useState(true);
+  const [activeTab, setActiveTab] = useState("/home")
+
+  const menuItem = [
+    { path: "/home", label: "Home" },
+    { path: "/page", label: "Page" },
+    { path: "/about", label: "About" },
+    { path: "/contact", label: "Contact" },
+  ];
 
   useEffect(() => {
     const handleScrolledWebsite = function () {
-      if (scrollY === 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
+      const isTopPage = scrollY === 0;
+      const wasScrolled = preScrolledRef.current;
+
+      if (wasScrolled !== isTopPage) {
+        setScrolled(isTopPage);
+        preScrolledRef.current = isTopPage;
       }
     }
 
     window.addEventListener("scroll", handleScrolledWebsite);
-
     return (() => window.removeEventListener("scroll", handleScrolledWebsite));
   }, []);
+
+  const handleActiveTab = function (path) {
+    setActiveTab(path);
+  }
 
   return (
     <nav
@@ -26,12 +40,19 @@ export default function TabBar() {
     >
       <div className={classes.logo}>Godung</div>
       <ul className={classes.menu}>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/page">Page</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <BtnHamburger />
+        {menuItem.map(({ path, label }) => (
+          <li key={path}>
+            <a
+              href={path}
+              onClick={() => handleActiveTab(path)}
+              className={activeTab === path ? classes.active : undefined}
+            >
+              {label}
+            </a>
+          </li>
+        ))}
       </ul>
+      <BtnHamburger />
     </nav>
   );
 }
