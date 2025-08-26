@@ -1,18 +1,12 @@
-import { useState } from "react";
-
 import classes from "./BtnHamburger.module.css"
 
-export default function BtnHamburger() {
-  const [isOpenSideBar, setIsOpenSideBar] = useState(false);
-
-  const handleOpenSideBar = function () {
-    setIsOpenSideBar(pre => !pre);
-  }
-
+export default function BtnHamburger({ isOpenSideBar, onToggle }) {
   return (
     <button
-      className={`${classes.btnHamburger} ${isOpenSideBar ? classes.open : ""}`}
-      onClick={handleOpenSideBar}
+      className={`
+      ${classes.btnHamburger} ${isOpenSideBar ? classes.open : undefined}
+      `}
+      onClick={onToggle}
     >
       <span className={classes.bar}></span>
       <span className={classes.bar}></span>

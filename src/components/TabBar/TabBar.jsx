@@ -1,12 +1,14 @@
 import { useState, useRef, useEffect } from "react";
 
 import BtnHamburger from "../BtnHamburger/BtnHamburger";
+import SideBar from "../SideBar/SideBar.jsx";
 import classes from "./TabBar.module.css";
 
 export default function TabBar() {
   const wasScrolledRef = useRef(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeTab, setActiveTab] = useState("/home")
+  const [activeTab, setActiveTab] = useState("/home");
+  const [isOpenSideBar, setIsOpenSideBar] = useState(false);
 
   const menuItem = [
     { path: "/home", label: "Home" },
@@ -37,10 +39,15 @@ export default function TabBar() {
     setActiveTab(path);
   }
 
+  const handleOpenSidebar = function () {
+    setIsOpenSideBar(pre => !pre);
+  }
+
   return (
     <nav
       className={`${classes["tab-bar"]} ${scrolled ? classes.scrolled : undefined}`}
     >
+      <SideBar isOpenSideBar={isOpenSideBar} />
       <div className={classes.logo}>Godung</div>
       <ul className={classes.menu}>
         {menuItem.map(({ path, label }) => (
@@ -55,7 +62,10 @@ export default function TabBar() {
           </li>
         ))}
       </ul>
-      <BtnHamburger />
+      <BtnHamburger
+        isOpenSideBar={isOpenSideBar}
+        onToggle={handleOpenSidebar}
+      />
     </nav>
   );
 }
