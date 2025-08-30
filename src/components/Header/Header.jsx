@@ -1,11 +1,11 @@
-import classes from "./Header.module.css"
-
-import PersonImg from "../../assets/Person.jpg"
+import HeroSlider from "../HeroSlider/HeroSlider";
+import TabBar from "../TabBar/TabBar";
 
 export default function Header() {
   return (
     <header>
-      <img className={classes.img} src={PersonImg} alt="Person" />
+      <TabBar />
+      <HeroSlider />
     </header>
   );
 }
