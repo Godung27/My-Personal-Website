@@ -1,0 +1,84 @@
+.icon-area {
+  display: flex;
+  margin: 30px auto 0;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 500px;
+  min-width: 300px;
+}
+
+.iconItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #252525;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+}
+
+.iconItem:hover {
+  transform: scale(1.1);
+}
+
+.Github {
+  width: 51px;
+  background-image: url("../../assets/icon/github-mark/github-icon.svg");
+}
+
+.Gmail {
+  width: 55px;
+  height: 41px;
+  background-image: url("../../assets/icon/Gmail_icon.svg");
+}
+
+.Facebook {
+  background-image: url("../../assets/icon/Facebook_icon.svg");
+}
+
+.Instagram {
+  background-image: url("../../assets/icon/Instagram_icon.svg");
+}
+
+@media (max-width: 769px) {
+  .icon-area {
+    flex-wrap: wrap; 
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .iconItem {
+    flex-direction: row;
+    width: 50%;
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+
+  .iconItem span {
+    margin-left: 10px;
+    align-self: center; 
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .Github {
+    width: 41px;
+  }
+
+  .Gmail {
+    height: 30px;
+  }
+}
