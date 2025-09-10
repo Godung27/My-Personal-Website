@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-import BtnHamburger from "../BtnHamburger/BtnHamburger";
+import BtnHamburger from "../BtnHamburger/BtnHamburger.jsx";
 import SideBar from "../SideBar/SideBar.jsx";
 import classes from "./TabBar.module.css";
 

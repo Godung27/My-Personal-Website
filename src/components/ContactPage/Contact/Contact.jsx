@@ -1,4 +1,4 @@
-import IconContact from "../IconContact/IconContact";
+import IconContact from "../IconContact/IconContact.jsx";
 import classes from "./Contact.module.css"
 
 export default function Contact() {
@@ -15,7 +15,11 @@ export default function Contact() {
         </div>
         <div className={classes.info}>
           <p>Visit</p>
-          <a href="https://maps.app.goo.gl/TNCn7Bnhzhhhm3r3A">
+          <a
+            href="https://maps.app.goo.gl/TNCn7Bnhzhhhm3r3A"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             47/1 Moo.4 Khlong Nueng, Khlong Luang, Pathum Thani 12120
           </a>
         </div>

@@ -20,10 +20,17 @@
 }
 
 .info a {
+  display: block;
   color: black;
   font-weight: 600;
   text-decoration: none;
   outline: none;
+  transition: color 0.3s;
+  word-spacing: 3px;
+}
+
+.info a:hover {
+  color: #FF4D00;
 }
 
 @media(max-width: 769px) {
