@@ -20,7 +20,7 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            47/1 Moo.4 Khlong Nueng, Khlong Luang, Pathum Thani 12120
+            47/1  Moo.4  Khlong Nueng,  Khlong Luang,  Pathum Thani  12120
           </a>
         </div>
       </div>
