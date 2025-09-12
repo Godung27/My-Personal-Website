@@ -31,16 +31,13 @@ export default function Skills() {
 
   return (
     <div>
-      <h3>My Skills</h3>
+      <h3 className={classes.topic}>My Skills</h3>
       <div className={classes["skills-area"]}>
-        {skillItems.map(({ title, icon, description }, index) => {
-          const isLastRow = skillItems.length % 3 === 1 && index === skillItems.length - 1;
-
+        {skillItems.map(({ title, icon, description }) => {
           return (
             <div
               key={title}
               className={classes.skillItem}
-              style={isLastRow ? { gridColumn: "2/3" } : {}}
             >
               <img className={classes.iconSkill} src={icon} alt={title} />
               <h4>{title}</h4>

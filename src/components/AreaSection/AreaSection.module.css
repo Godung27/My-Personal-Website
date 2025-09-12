@@ -1,0 +1,26 @@
+.areaSection {
+  padding: 80px 40px 40px 40px;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.light {
+  background-color: white;
+}
+
+.dark {
+  background-color: rgb(250, 250, 250);
+}
+
+.areaText {
+  margin: 0 100px;
+}
+
+.areaText h2 {
+  margin: 0;
+  color: rgb(99, 99, 99);
+}
+
+.areaText h3 {
+  margin-left: 5px;
+}

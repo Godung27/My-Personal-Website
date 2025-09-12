@@ -1,8 +1,15 @@
+.topic {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
 .skills-area {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 40px 20px;
+  margin: 0 20px;
 }
 
 .skillItem {

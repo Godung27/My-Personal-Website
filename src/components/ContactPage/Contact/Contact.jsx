@@ -1,9 +1,11 @@
+import AreaSection from "../../AreaSection/AreaSection.jsx"
 import IconContact from "../IconContact/IconContact.jsx";
+
 import classes from "./Contact.module.css"
 
 export default function Contact() {
   return (
-    <div className="area">
+    <AreaSection theme="dark">
       <h2>Contact</h2>
       <h3>Parnuvich Limtongsittikun</h3>
       <div className={classes.row}>
@@ -25,6 +27,6 @@ export default function Contact() {
         </div>
       </div>
       <IconContact />
-    </div>
+    </AreaSection>
   );
 }

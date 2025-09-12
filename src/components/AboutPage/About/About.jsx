@@ -1,10 +1,11 @@
+import AreaSection from "../../AreaSection/AreaSection.jsx";
 import Skills from "../Skills/Skills.jsx"
 
 export default function () {
   return (
-    <div className="area">
+    <AreaSection theme="light">
       <h2>About</h2>
       <Skills />
-    </div>
+    </AreaSection>
   );
 }
