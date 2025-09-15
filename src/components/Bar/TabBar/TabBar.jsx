@@ -11,10 +11,10 @@ export default function TabBar() {
   const [isOpenSideBar, setIsOpenSideBar] = useState(false);
 
   const menuItem = [
-    { path: "/home", label: "Home" },
-    { path: "/page", label: "Page" },
-    { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
+    { path: "#home", label: "Home" },
+    { path: "#page", label: "Page" },
+    { path: "#about", label: "About" },
+    { path: "#contact", label: "Contact" },
   ];
 
   useEffect(() => {

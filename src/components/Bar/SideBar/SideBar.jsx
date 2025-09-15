@@ -2,10 +2,10 @@ import classes from "./SideBar.module.css"
 
 export default function SideBar({ isOpenSideBar }) {
   const menuItem = [
-    { path: "/home", label: "Home" },
-    { path: "/page", label: "Page" },
-    { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
+    { path: "#home", label: "Home" },
+    { path: "#page", label: "Page" },
+    { path: "#about", label: "About" },
+    { path: "#contact", label: "Contact" },
   ];
 
   return (

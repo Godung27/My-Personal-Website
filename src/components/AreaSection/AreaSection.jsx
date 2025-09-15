@@ -1,8 +1,8 @@
 import classes from "./AreaSection.module.css"
 
-export default function AreaSection({ theme = "light", children }) {
+export default function AreaSection({ theme = "light", id, children }) {
   return (
-    <section className={`${classes.areaSection} ${classes[theme]}`}>
+    <section id={id} className={`${classes.areaSection} ${classes[theme]}`}>
       <div className={classes.areaText}>
         {children}
       </div>
