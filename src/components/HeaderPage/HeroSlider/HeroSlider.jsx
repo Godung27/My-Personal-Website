@@ -1,6 +1,6 @@
 import classes from "./HeroSlider.module.css"
-import PersonImg from "../../../assets/image/Person.jpg"
-import HeroImg from "../../../assets/image/heroImg.jpg"
+import PersonImg from "../../../assets/image/HeroSlider/Person.jpg"
+import HeroImg from "../../../assets/image/HeroSlider/heroImg.jpg"
 
 export default function HeroSlider() {
   const imgs = [PersonImg, HeroImg];
