@@ -6,7 +6,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 20px;
+  margin: 0 auto;
+  gap: 20px;
 }
 
 .experienceItem {
@@ -19,12 +20,16 @@
 }
 
 .box {
-  background-color: aquamarine;
+  width: 100%;
+  border-radius: 12px;
+  background-color: white;
   padding: 10px 10px 0 10px;
-  margin: 10px;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .photoExperience {
-  width: 70px;
-  height: 70px;
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
 }

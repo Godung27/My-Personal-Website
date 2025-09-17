@@ -4,7 +4,7 @@ import Experience from "../Experience/Experience.jsx";
 
 export default function () {
   return (
-    <AreaSection theme="light" id="about">
+    <AreaSection theme="dark" id="about">
       <h2>About</h2>
       <Skills />
       <Experience />

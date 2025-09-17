@@ -5,7 +5,7 @@ import classes from "./Contact.module.css"
 
 export default function Contact() {
   return (
-    <AreaSection theme="dark">
+    <AreaSection theme="dark" id="contact">
       <h2>Contact</h2>
       <h3>Parnuvich Limtongsittikun</h3>
       <div className={classes.row}>
