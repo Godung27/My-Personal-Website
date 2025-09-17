@@ -2,20 +2,14 @@ import { useState, useRef, useEffect } from "react";
 
 import BtnHamburger from "../BtnHamburger/BtnHamburger.jsx";
 import SideBar from "../SideBar/SideBar.jsx";
+import { menuItems } from "../menuItems.js"
 import classes from "./TabBar.module.css";
 
 export default function TabBar() {
   const wasScrolledRef = useRef(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeTab, setActiveTab] = useState("/home");
+  const [activeTab, setActiveTab] = useState("#home");
   const [isOpenSideBar, setIsOpenSideBar] = useState(false);
-
-  const menuItem = [
-    { path: "#home", label: "Home" },
-    { path: "#page", label: "Page" },
-    { path: "#about", label: "About" },
-    { path: "#contact", label: "Contact" },
-  ];
 
   useEffect(() => {
     const handleScrolledWebsite = function () {
@@ -47,10 +41,12 @@ export default function TabBar() {
     <nav
       className={`${classes["tab-bar"]} ${scrolled ? classes.scrolled : undefined}`}
     >
-      <SideBar isOpenSideBar={isOpenSideBar} />
+      <SideBar
+        isOpenSideBar={isOpenSideBar}
+      />
       <div className={classes.logo}>Godung</div>
       <ul className={classes.menu}>
-        {menuItem.map(({ path, label }) => (
+        {menuItems.map(({ path, label }) => (
           <li key={path}>
             <a
               href={path}
