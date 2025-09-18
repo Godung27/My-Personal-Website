@@ -104,14 +104,12 @@ export default function Experience() {
           return (
             <div
               key={title}
-              className={classes.experienceItems}
+              className={classes.experienceItem}
             >
-              <div className={classes.box}>
-                <img className={classes.photoExperience} src={photo} alt={title} />
-                <h4 className={classes.title}>{title}</h4>
-                <h6 className={classes.code}>{code}</h6>
-                <p className={classes.description}>{description}</p>
-              </div>
+              <img className={classes.photoExperience} src={photo} alt={title} />
+              <h4 className={classes.title}>{title}</h4>
+              <h6 className={classes.code}>{code}</h6>
+              <p className={classes.description}>{description}</p>
             </div>
           );
         })}

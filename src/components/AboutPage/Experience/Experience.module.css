@@ -13,18 +13,11 @@
 .experienceItem {
   display: flex;
   flex-direction: column;
-  flex: 0 0 33.3%;
-  align-items: center;
-  color: #252525;
-  word-break: break-word;
-}
-
-.box {
-  width: 100%;
-  max-width: 320px;
-  border-radius: 12px;
+  flex: 0 0 calc(33.3% - 13.33px);
   background-color: white;
-  padding: 10px 10px 10px 10px;
+  border-radius: 12px;
+  padding: 10px;
+  color: #252525;
   box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -36,7 +29,6 @@
 }
 
 .title {
-  color: #252525;
   font-size: 22px;
   margin: 0;
 }
@@ -49,8 +41,6 @@
 }
 
 .description {
-  display: block;
-  color: #252525;
   white-space: pre-wrap;
   word-break: break-word;
   margin-bottom: 0;
