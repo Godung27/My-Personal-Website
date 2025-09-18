@@ -21,15 +21,37 @@
 
 .box {
   width: 100%;
+  max-width: 320px;
   border-radius: 12px;
   background-color: white;
-  padding: 10px 10px 0 10px;
+  padding: 10px 10px 10px 10px;
   box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .photoExperience {
-  width: 300px;
+  width: 100%;
   height: auto;
   border-radius: 5px;
   object-fit: cover;
+}
+
+.title {
+  color: #252525;
+  font-size: 22px;
+  margin: 0;
+}
+
+.code {
+  color: #636363;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.description {
+  display: block;
+  color: #252525;
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin-bottom: 0;
 }

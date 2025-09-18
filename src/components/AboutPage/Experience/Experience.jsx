@@ -17,67 +17,80 @@ import ReactQuizGameImg from "../../../assets/image/Experience/React-QuizGame.pn
 export default function Experience() {
   const experienceItems = [
     {
-      title: "1",
+      title: "HTML-CSS",
+      code: "JavaScript",
       photo: JavaScriptHtmlCssImg,
-      description: "",
+      description: "gggggggggggggggggggggggggggggggggggggggggggg",
     },
     {
-      title: "2",
+      title: "Guess My Number",
+      code: "JavaScript",
       photo: JavaScriptGuessMyNumberImg,
       description: "",
     },
     {
-      title: "3",
+      title: "Pig Game",
+      code: "JavaScript",
       photo: JavaScriptPigGameImg,
       description: "",
     },
     {
-      title: "4",
+      title: "Bankist",
+      code: "JavaScript",
       photo: JavaScriptBankistImg,
       description: "",
     },
     {
-      title: "5",
+      title: "React Essentials",
+      code: "React",
       photo: ReactReactEssentialsImg,
       description: "",
     },
     {
-      title: "6",
+      title: "Tic-Tac-Toe",
+      code: "React",
       photo: ReactTicTacToeImg,
       description: "",
     },
     {
-      title: "7",
+      title: "Investment Calculator",
+      code: "React",
       photo: ReactInvestmentCalculatorImg,
       description: "",
     },
     {
-      title: "8",
+      title: "Styling",
+      code: "React",
       photo: ReactStylingImg,
       description: "",
     },
     {
-      title: "9",
+      title: "Countdown Game",
+      code: "React",
       photo: ReactCountdownGameImg,
       description: "",
     },
     {
-      title: "10",
+      title: "Project Management",
+      code: "React",
       photo: ReactProjectManagementImg,
       description: "",
     },
     {
-      title: "11",
+      title: "Online Shop",
+      code: "React",
       photo: ReactOnlineShopImg,
       description: "",
     },
     {
-      title: "12",
+      title: "Place Picker",
+      code: "React",
       photo: ReactPlacePickerImg,
       description: "",
     },
     {
-      title: "13",
+      title: "Quiz Game",
+      code: "React",
       photo: ReactQuizGameImg,
       description: "",
     },
@@ -87,7 +100,7 @@ export default function Experience() {
     <div>
       <h3 className={classes.topic}>Experience</h3>
       <div className={classes["experience-area"]}>
-        {experienceItems.map(({ title, photo, description }) => {
+        {experienceItems.map(({ title, code, photo, description }) => {
           return (
             <div
               key={title}
@@ -95,8 +108,9 @@ export default function Experience() {
             >
               <div className={classes.box}>
                 <img className={classes.photoExperience} src={photo} alt={title} />
-                <h4>{title}</h4>
-                <p>{description}</p>
+                <h4 className={classes.title}>{title}</h4>
+                <h6 className={classes.code}>{code}</h6>
+                <p className={classes.description}>{description}</p>
               </div>
             </div>
           );
