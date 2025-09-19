@@ -26,4 +26,15 @@
   padding-bottom: 15px;
   border-bottom: 1px solid rgb(221, 221, 221);
   font-size: 22px;
+  min-width: 180px;
+}
+
+@media (max-width: 769px) {
+  .areaSection {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .areaText {
+    margin: 0 20px;
+  }
 }

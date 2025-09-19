@@ -1,15 +1,12 @@
 .topic {
   text-align: center;
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgb(221, 221, 221);
-  font-size: 22px;
 }
 
 .skills-area {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 20px;
+  margin: 0;
 }
 
 .skillItem {
@@ -24,4 +21,10 @@
 .iconSkill {
   width: 70px;
   height: 70px;
+}
+
+@media(max-width: 480px) {
+  .skillItem {
+    flex: 0 0 100%;
+  }
 }
