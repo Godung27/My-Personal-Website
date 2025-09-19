@@ -32,6 +32,7 @@
 @media (max-width: 769px) {
   .areaSection {
     padding: 40px 20px 20px 20px;
+    scroll-margin-top: 40px;
   }
 
   .areaText {
