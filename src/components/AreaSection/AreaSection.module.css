@@ -2,6 +2,7 @@
   padding: 80px 40px 40px 40px;
   border-top: 1px solid rgb(255, 255, 255);
   border-bottom: 1px solid rgb(221, 221, 221);
+  min-width: 320px;
 }
 
 .light {
@@ -26,10 +27,9 @@
   padding-bottom: 15px;
   border-bottom: 1px solid rgb(221, 221, 221);
   font-size: 22px;
-  min-width: 180px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .areaSection {
     padding: 40px 20px 20px 20px;
     scroll-margin-top: 40px;

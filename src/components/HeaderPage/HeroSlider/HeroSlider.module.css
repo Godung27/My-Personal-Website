@@ -11,7 +11,7 @@
   object-fit: cover;
 }
 
-@media(max-width: 769px) {
+@media(max-width: 768px) {
   .bg-slider {
     height: 600px;
   }

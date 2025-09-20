@@ -26,19 +26,17 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .icon-area {
     flex-wrap: wrap; 
     width: 100%;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 15px;
-    margin-right: 15px;
   }
 
   .iconItem {
     flex-direction: row;
-    width: 50%;
+    flex: 0 0 50%;
     margin-top: 20px;
     justify-content: flex-start;
     transition: opacity 0.3s;

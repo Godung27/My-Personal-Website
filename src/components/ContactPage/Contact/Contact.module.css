@@ -33,7 +33,7 @@
   color: #FF4D00;
 }
 
-@media(max-width: 769px) {
+@media(max-width: 768px) {
   .row {
     flex-direction: column;
   }

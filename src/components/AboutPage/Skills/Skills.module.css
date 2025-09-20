@@ -22,9 +22,3 @@
   width: 70px;
   height: 70px;
 }
-
-@media(max-width: 480px) {
-  .skillItem {
-    flex: 0 0 100%;
-  }
-}
