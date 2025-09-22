@@ -6,6 +6,7 @@ export default function () {
   return (
     <AreaSection theme="dark" id="about">
       <h2>About</h2>
+      <p>I'm Parnuvich mmmmmmmmmmmmmmmmmmmmmmmmm</p>
       <Skills />
       <Experience />
     </AreaSection>

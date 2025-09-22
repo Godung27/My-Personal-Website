@@ -1,17 +1,17 @@
-import classes from "./Card.module.css"
+import classes from "./Modal.module.css"
 
-export default function Card({ item }) {
-  const { title, code, photo } = item;
+export default function Modal({ item }) {
+  const { title, code, photo, description } = item;
 
   return (
     <>
       <div
-        key={title}
-        className={classes.cardExperience}
+        className={classes.modalExperience}
       >
         <img className={classes.photoExperience} src={photo} alt={title} />
         <h4 className={classes.title}>{title}</h4>
         <h6 className={classes.code}>{code}</h6>
+        <p className={classes.description}>{description}</p>
       </div>
     </>
   );
