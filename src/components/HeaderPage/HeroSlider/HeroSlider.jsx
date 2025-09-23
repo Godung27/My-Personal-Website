@@ -7,6 +7,7 @@ export default function HeroSlider() {
 
   return (
     <div className={classes["bg-slider"]}>
+      <div className={classes.overlay} />
       <img className={classes["img-hero"]} src={PersonImg} alt="Person" />
       <img className={classes["img-hero"]} src={HeroImg} alt="HeroImg" />
     </div>
