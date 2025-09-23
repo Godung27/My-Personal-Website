@@ -6,14 +6,14 @@ import { experienceItems } from "./experienceItems.js";
 import classes from "./Experience.module.css"
 
 export default function Experience() {
-  const [selectedItem, setSelectedItem] = useState(false);
+  const [isSelectedItem, setIsSelectedItem] = useState(false);
 
   const handleOpenModal = function (item) {
-    setSelectedItem(item);
+    setIsSelectedItem(item);
   }
 
   const handleCloseModal = function () {
-    setSelectedItem(false);
+    setIsSelectedItem(false);
   }
 
   return (
@@ -31,8 +31,8 @@ export default function Experience() {
         }
       </div>
       {
-        selectedItem &&
-        <Modal item={selectedItem} onCloseModal={handleCloseModal} />
+        isSelectedItem &&
+        <Modal item={isSelectedItem} onCloseModal={handleCloseModal} />
       }
     </div>
   );
