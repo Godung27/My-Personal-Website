@@ -16,7 +16,9 @@ export default function Modal({ item, onCloseModal }) {
         <button className={classes.btnClose} onClick={onCloseModal}>
           &times;
         </button>
-        <img className={classes.photoExperience} src={photo} alt={title} />
+        <div className={classes["bg-photo"]}>
+          <img className={classes.photoExperience} src={photo} alt={title} />
+        </div>
         <div className={classes.textLayout}>
           <h4 className={classes.title}>{title}</h4>
           <h6 className={classes.code}>{code}</h6>
