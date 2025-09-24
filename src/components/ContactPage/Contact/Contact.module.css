@@ -1,4 +1,4 @@
-.row {
+.textLayout {
   display: flex;
   flex-wrap: wrap;
   margin-right: 15px;
@@ -34,7 +34,7 @@
 }
 
 @media(max-width: 768px) {
-  .row {
+  .textLayout {
     flex-direction: column;
   }
 }

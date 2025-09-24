@@ -8,7 +8,7 @@ export default function Contact() {
     <AreaSection theme="dark" id="contact">
       <h2>Contact</h2>
       <h3>Parnuvich Limtongsittikun</h3>
-      <div className={classes.row}>
+      <div className={classes.textLayout}>
         <div className={classes.info}>
           <p>Email</p>
           <a href="mailto:parnuvich.l@gmail.com">parnuvich.l@gmail.com</a>
