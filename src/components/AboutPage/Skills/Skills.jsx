@@ -15,12 +15,12 @@ export default function Skills() {
     {
       title: "CSS 3",
       icon: CssIcon,
-      description: "niuiui",
+      description: "ccccccccccccccccccccccccccccc",
     },
     {
       title: "JavaScript",
       icon: JavaScriptIcon,
-      description: "niuiui",
+      description: "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
     },
     {
       title: "React",
@@ -40,8 +40,8 @@ export default function Skills() {
               className={classes.skillItem}
             >
               <img className={classes.iconSkill} src={icon} alt={title} />
-              <h4>{title}</h4>
-              <p>{description}</p>
+              <h4 className={classes.titleSkill}>{title}</h4>
+              <p className={classes.descriptionSkill}>{description}</p>
             </div>
           );
         })}
