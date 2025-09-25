@@ -87,12 +87,20 @@
   }
 
   .bg-photo {
-    height: 50%;
-    width: auto;
+    width: 90%;
+    height: auto;
     align-self: center;
+    margin-top: 10px;
   }
 
   .textLayout {
     width: 100%;
+  }
+
+  .btnClose {
+    font-size: 32px;
+    top: 0;
+    right: 8px;
+    z-index: 1000;
   }
 }
