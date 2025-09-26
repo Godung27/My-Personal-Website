@@ -53,6 +53,10 @@
   margin-bottom: 0;
 }
 
+.link {
+  text-align: end;
+}
+
 .overlay {
   position: fixed;
   top: 0;

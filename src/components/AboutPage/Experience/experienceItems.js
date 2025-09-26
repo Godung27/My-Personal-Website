@@ -17,37 +17,55 @@ export const experienceItems = [
     title: "HTML-CSS",
     code: "JavaScript",
     photo: JavaScriptHtmlCssImg,
-    description: "gggggggggggggggggggggggggggggggggggggggggggg",
+    description:
+      `This is my first project. I practiced using basic HTML and CSS. I created a simple web page to build a basic HTML structure and used CSS to style the background, text, colors, fonts, and layout.`
+    ,
+    github: "https://github.com/Godung27/learningJavaScript/tree/master/04-HTML-CSS",
   },
   {
     title: "Guess My Number",
     code: "JavaScript",
     photo: JavaScriptGuessMyNumberImg,
-    description: "",
+    description:
+      `The Guess My Number game lets the player guess a randomly generated number between 1 to 20. Feedback is given for each guess, and the score decreases with each wrong attempt. When guessed correctly, the game displays a success message and updates the high score. The "Again" button allows the player to restart the game.`
+    ,
+    github: "https://github.com/Godung27/learningJavaScript/tree/master/05-Guess-My-Number",
   },
   {
     title: "Pig Game",
     code: "JavaScript",
     photo: JavaScriptPigGameImg,
-    description: "",
+    description:
+      `This is a Pig Game where two players take turns rolling a dice to accumulate points in each round. If a player rolls a 1, they lose their current round score and the turn passes to the other player. Players can choose to “Hold” to save their accumulated points. The first player to reach 100 points wins, and the game can be restarted with the “New Game” button.`
+    ,
+    github: "https://github.com/Godung27/learningJavaScript/tree/master/07-Pig-Game",
   },
   {
     title: "Bankist",
     code: "JavaScript",
     photo: JavaScriptBankistImg,
-    description: "",
+    description:
+      `The Bankist App simulates an online banking system. Users log in with a username and PIN to check their balance, view transactions, transfer money, request loans, and close accounts.`
+    ,
+    github: "https://github.com/Godung27/learningJavaScript/tree/master/11-Arrays-Bankist",
   },
   {
     title: "React Essentials",
     code: "React",
     photo: ReactReactEssentialsImg,
-    description: "",
+    description:
+      `This is my first React project, created to demonstrate the React essentials, including components, JSX, props, state, and handling events.`
+    ,
+    github: "https://github.com/Godung27/LearningReact/tree/master/01-React-Essentials",
   },
   {
     title: "Tic-Tac-Toe",
     code: "React",
     photo: ReactTicTacToeImg,
-    description: "",
+    description:
+      `the game displays a success message for the player who win. The "Rematch" button allows the player to restart the game.`
+    ,
+    github: "https://github.com/Godung27/LearningReact/tree/master/02-Essentials-Deep-Dive",
   },
   {
     title: "Investment Calculator",

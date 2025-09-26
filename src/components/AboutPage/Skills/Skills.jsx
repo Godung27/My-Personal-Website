@@ -10,22 +10,22 @@ export default function Skills() {
     {
       title: "HTML 5",
       icon: HtmlIcon,
-      description: "gggggggggggggggggggggggggggggggggggggggggggg",
+      description: "hihihihihihihihihihihhihihi",
     },
     {
       title: "CSS 3",
       icon: CssIcon,
-      description: "ccccccccccccccccccccccccccccc",
+      description: "",
     },
     {
       title: "JavaScript",
       icon: JavaScriptIcon,
-      description: "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+      description: "",
     },
     {
       title: "React",
       icon: ReactIcon,
-      description: "niuiui",
+      description: "",
     },
   ]
 
