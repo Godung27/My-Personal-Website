@@ -1,5 +1,7 @@
 import classes from "./Modal.module.css"
 
+import GithubIcon from "../../../../assets/icon/Contact/Github_icon.svg"
+
 export default function Modal({ item, onCloseModal }) {
   const { title, code, photo, description, github } = item;
 
@@ -20,17 +22,20 @@ export default function Modal({ item, onCloseModal }) {
           <img className={classes.photoExperience} src={photo} alt={title} />
         </div>
         <div className={classes.textLayout}>
-          <h4 className={classes.title}>{title}</h4>
+          <div className={classes.titleArea}>
+            <h4 className={classes.title}>{title}</h4>
+            <a
+              className={classes.iconArea}
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub"
+            >
+              <img className={classes.icon} src={GithubIcon} alt="GitHub" />
+            </a>
+          </div>
           <h6 className={classes.code}>{code}</h6>
           <p className={classes.description}>{description}</p>
-          <a
-            className={classes.link}
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            link
-          </a>
         </div>
       </div>
     </div>
