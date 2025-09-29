@@ -63,7 +63,7 @@ export const experienceItems = [
     code: "React",
     photo: ReactTicTacToeImg,
     description:
-      `the game displays a success message for the player who win. The "Rematch" button allows the player to restart the game.`
+      `This is a Tic-Tac-Toe game where two players take turns putting X or O on a 3x3 board. Players can enter their names, and the game tracks their move history to analyze their strategies. The first player to get 3 in a row wins, and the game displays a success message for the winner. If no one wins, it displays a tie. The "Rematch" button allows the players to restart the game.`
     ,
     github: "https://github.com/Godung27/LearningReact/tree/master/02-Essentials-Deep-Dive",
   },
