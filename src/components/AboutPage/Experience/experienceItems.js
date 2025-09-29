@@ -71,25 +71,37 @@ export const experienceItems = [
     title: "Investment Calculator",
     code: "React",
     photo: ReactInvestmentCalculatorImg,
-    description: "",
+    description:
+      `This is a Investment Calculator helps you visualize how your savings can grow over time. Simply enter your Initial Investment, Annual Contribution, Expected Annual Return, and Investment Duration. The calculator then provides a detailed yearly breakdown showing: Investment Value, Annual Interest Earned, Total Interest Accumulated, and Investment Capital. It's a clear and easy way to track your potential financial growth.`
+    ,
+    github: "https://github.com/Godung27/LearningReact/tree/master/03-Essentials-Practice",
   },
   {
     title: "Styling",
     code: "React",
     photo: ReactStylingImg,
-    description: "",
+    description:
+      `This is a demo sign-up page designed to show how the process works. Users are required to fill in all the necessary fields. If important information such as an email or password is missing, the empty fields will turn red to prompt the user to complete them.`
+    ,
+    github: "https://github.com/Godung27/LearningReact/tree/master/04-Styling",
   },
   {
     title: "Countdown Game",
     code: "React",
     photo: ReactCountdownGameImg,
-    description: "",
+    description:
+      `The Countdown Game has four levels of difficulty, based on the number of seconds. When the player clicks the "Start" button, the timer begins counting down in real time. If they fail to press the "Stop" button before time runs out, they lose, and a modal will pop up to let them know that time is up. If they manage to stop the timer in time, a modal will appear showing their score. The closer they stop the timer to zero, the higher their score. The modal will also display the exact time they stopped the countdown.`
+    ,
+    github: "https://github.com/Godung27/LearningReact/tree/master/06-Refs-Portals",
   },
   {
     title: "Project Management",
     code: "React",
     photo: ReactProjectManagementImg,
-    description: "",
+    description:
+      ``
+    ,
+    github: "https://github.com/Godung27/LearningReact/tree/master/07-Practice-Project-Project-Management",
   },
   {
     title: "Online Shop",
