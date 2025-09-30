@@ -5,7 +5,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 90%;
   background-color: white;
   border-radius: 12px;
   padding: 20px;
@@ -70,7 +70,7 @@
 
 .description {
   overflow-y: auto;
-  height: 120px;
+  height: 150px;
   white-space: pre-wrap;
   word-break: break-word;
   margin-bottom: 0;

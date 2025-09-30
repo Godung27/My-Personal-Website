@@ -99,7 +99,7 @@ export const experienceItems = [
     code: "React",
     photo: ReactProjectManagementImg,
     description:
-      ``
+      `This is a Project Management system that allows users to create new projects by entering a name, details, and date. Users can also add sub-notes (similar to notes or subtasks) within each project. Projects can be accessed via a sidebar, and users can delete unwanted projects or notes as needed.`
     ,
     github: "https://github.com/Godung27/LearningReact/tree/master/07-Practice-Project-Project-Management",
   },
@@ -107,18 +107,27 @@ export const experienceItems = [
     title: "Online Shop",
     code: "React",
     photo: ReactOnlineShopImg,
-    description: "",
+    description:
+      `This is a Online Shop that allows selection of clothing items to be added to the cart by clicking the "Add to Cart" button. The selected items are then moved to the Cart, and clicking the "Cart" button opens a modal displaying the chosen items. Inside the modal, the quantity of each item can be adjusted, and the total price of all selected items is displayed.`
+    ,
+    github: "https://github.com/Godung27/LearningReact/tree/master/08-Advanced-State-Management-with-Context-useReducer",
   },
   {
     title: "Place Picker",
     code: "React",
     photo: ReactPlacePickerImg,
-    description: "",
+    description:
+      `This is a Place Picker that shows images of places from around the world, sorted by distance from the users location—from closest to farthest. To add a place to the "I'd like to visit ..." list, simply click on its image. To remove a place, click on it again, and a modal will appear asking to confirm with yes or no. If no response is given within a set time, the place will be removed automatically. The website also saves the selected places, so they remain even after the page is reloaded.`
+    ,
+    github: "https://github.com/Godung27/LearningReact/tree/master/09-Side-Effects-useEffect",
   },
   {
     title: "Quiz Game",
     code: "React",
     photo: ReactQuizGameImg,
-    description: "",
+    description:
+      `This is a Quiz Game where players answer a series of preset questions one by one. Each question includes multiple-choice options and a time limit. Once all questions have been completed, the game displays the results, including the total score, the number of correct answers, incorrect answers, and unanswered questions.`
+    ,
+    github: "https://github.com/Godung27/LearningReact/tree/master/10-Demo-Project-React-Quiz-App",
   },
 ]
