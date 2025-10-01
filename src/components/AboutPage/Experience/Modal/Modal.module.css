@@ -69,8 +69,8 @@
 }
 
 .description {
+  flex: 1 1 0px;
   overflow-y: auto;
-  height: 150px;
   white-space: pre-wrap;
   word-break: break-word;
   margin-bottom: 0;
@@ -121,6 +121,10 @@
 
   .textLayout {
     width: 100%;
+  }
+
+  .description {
+    flex: 1 1 auto;
   }
 
   .btnClose {
