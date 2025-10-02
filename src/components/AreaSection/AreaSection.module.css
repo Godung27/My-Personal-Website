@@ -1,5 +1,12 @@
-.areaSection {
+.mainSection {
   padding: 80px 40px 40px 40px;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(221, 221, 221);
+  min-width: 320px;
+}
+
+.subSection {
+  padding: 40px 20px 20px 20px;
   border-top: 1px solid rgb(255, 255, 255);
   border-bottom: 1px solid rgb(221, 221, 221);
   min-width: 320px;
@@ -33,6 +40,10 @@
   .areaSection {
     padding: 40px 20px 20px 20px;
     scroll-margin-top: 40px;
+  }
+
+  .areaSubSection {
+    padding: 20px;
   }
 
   .areaText {
