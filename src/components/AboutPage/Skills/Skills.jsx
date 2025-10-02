@@ -10,7 +10,7 @@ export default function Skills() {
     {
       title: "HTML 5",
       icon: HtmlIcon,
-      description: "hihihihihihihihihihihhihihi",
+      description: "",
     },
     {
       title: "CSS 3",
@@ -41,7 +41,7 @@ export default function Skills() {
             >
               <img className={classes.iconSkill} src={icon} alt={title} />
               <h4 className={classes.titleSkill}>{title}</h4>
-              <p className={classes.descriptionSkill}>{description}</p>
+              {/* <p className={classes.descriptionSkill}>{description}</p> */}
             </div>
           );
         })}
