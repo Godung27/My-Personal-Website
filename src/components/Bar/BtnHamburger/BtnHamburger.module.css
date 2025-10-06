@@ -7,7 +7,7 @@
   height: 20px;
   border: none;
   background-color: transparent;
-  z-index: 3000;
+  z-index: 4000;
   cursor: pointer;
   box-sizing: content-box; 
 }
