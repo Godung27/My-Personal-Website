@@ -106,6 +106,7 @@
 
 @media(max-width: 768px) {
   .modalExperience {
+    position: relative;
     width: 90%;
     height: 90%;
     flex-direction: column;
@@ -129,7 +130,8 @@
 
   .btnClose {
     font-size: 32px;
-    top: 0;
-    right: 0px;
+    top: env(safe-area-inset-top, 10px);
+    right: 10px;
+    z-index: 6000;
   }
 }

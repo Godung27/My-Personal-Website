@@ -1,5 +1,6 @@
 .btnHamburger {
   display: none;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   padding: 17px 20px;
