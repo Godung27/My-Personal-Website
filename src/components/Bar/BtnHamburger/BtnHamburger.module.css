@@ -16,6 +16,7 @@
 .bar {
   height: 4px;
   background-color: white;
+  width: 100%;
   border-radius: 2px;
   transform-origin: center;
   transition: transform 0.3s, opacity 0.3s, background-color 0.3s;

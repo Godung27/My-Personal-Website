@@ -90,8 +90,10 @@
 
 .btnClose {
   position: fixed;
-  top: 5px;
-  right: 5px;
+  line-height: 14px;
+  top: 0;
+  right: 0;
+  padding: 20px;
   background: transparent;
   border: none;
   font-size: 24px;
@@ -130,8 +132,6 @@
 
   .btnClose {
     font-size: 32px;
-    top: env(safe-area-inset-top, 10px);
-    right: 10px;
-    z-index: 6000;
+    padding: 10px;
   }
 }

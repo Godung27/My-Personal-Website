@@ -4,7 +4,7 @@ import classes from "./SideBar.module.css"
 export default function SideBar({ isOpenSideBar }) {
   return (
     <nav
-      className={`${classes["side-bar"]} ${isOpenSideBar ? classes.open : undefined}`}
+      className={`${classes["side-bar"]} ${isOpenSideBar ? classes.open : ""}`}
     >
       <ul className={classes.menu}>
         {menuItems.map(({ path, label }) => (

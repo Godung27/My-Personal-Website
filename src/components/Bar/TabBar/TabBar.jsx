@@ -39,7 +39,7 @@ export default function TabBar() {
 
   return (
     <nav
-      className={`${classes["tab-bar"]} ${scrolled ? classes.scrolled : undefined}`}
+      className={`${classes["tab-bar"]} ${scrolled ? classes.scrolled : ""}`}
     >
       <SideBar
         isOpenSideBar={isOpenSideBar}
@@ -51,7 +51,7 @@ export default function TabBar() {
             <a
               href={path}
               onClick={() => handleActiveTab(path)}
-              className={activeTab === path ? classes.active : undefined}
+              className={activeTab === path ? classes.active : ""}
             >
               {label}
             </a>
