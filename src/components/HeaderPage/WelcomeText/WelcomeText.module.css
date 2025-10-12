@@ -1,0 +1,26 @@
+.areaWelcomeText {
+  position: absolute;
+  width: 70%;
+  top: 10%;
+  background-color: transparent;
+  color: black;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.areaWelcomeText h2 {
+  font-size: 72px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media(max-width: 768px) {
+  .areaWelcomeText {
+    width: 80%;
+    top: 20%;
+  }
+
+  .areaWelcomeText h2 {
+    font-size: 40px;
+  }
+}
