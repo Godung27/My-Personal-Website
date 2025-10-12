@@ -44,7 +44,7 @@ export default function TabBar() {
       <SideBar
         isOpenSideBar={isOpenSideBar}
       />
-      <div className={classes.logo}>Godung</div>
+      <div className={classes.logo}>Parnuvich</div>
       <ul className={classes.menu}>
         {menuItems.map(({ path, label }) => (
           <li key={path}>

@@ -1,11 +1,11 @@
-import HeroSlider from "../HeroSlider/HeroSlider.jsx";
+import HeroImg from "../HeroImg/HeroImg.jsx";
 import TabBar from "../../Bar/TabBar/TabBar.jsx"
 
 export default function Header() {
   return (
     <header id="home">
       <TabBar />
-      <HeroSlider />
+      <HeroImg />
     </header>
   );
 }
