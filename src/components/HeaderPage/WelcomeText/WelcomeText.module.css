@@ -1,23 +1,54 @@
 .areaWelcomeText {
   position: absolute;
-  width: 70%;
-  top: 10%;
+  top: 20%;
+  left: 10%;
+  width: 55%;
   background-color: transparent;
-  color: black;
   white-space: pre-wrap;
   word-break: break-word;
+  min-width: 510px;
 }
 
 .areaWelcomeText h2 {
   font-size: 72px;
   font-weight: bold;
   margin: 0;
+  background-image: linear-gradient(#FF4D00, white);
+  color: transparent;
+  background-clip: text;
+}
+
+.areaWelcomeText p {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.areaWelcomeText a {
+  font-size: 18px;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-decoration: none;
+  border: #FF4D00 solid 2px;
+  border-radius: 25px;
+  color: white;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.areaWelcomeText a:hover {
+  background-color: #FF4D00;
+}
+
+.areaWelcomeText a:active {
+  color: black;
 }
 
 @media(max-width: 768px) {
   .areaWelcomeText {
     width: 80%;
-    top: 20%;
+    min-width: 285px;
   }
 
   .areaWelcomeText h2 {
