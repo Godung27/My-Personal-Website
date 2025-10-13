@@ -1,6 +1,6 @@
 import AreaSection from "../../AreaSection/AreaSection.jsx";
 import Skills from "../Skills/Skills.jsx"
-import Experience from "../Experience/Experience.jsx";
+import Experiences from "../Experiences/Experiences.jsx";
 
 import classes from "./About.module.css"
 
@@ -23,7 +23,7 @@ export default function () {
         <Skills />
       </AreaSection>
       <AreaSection theme="light" topic="subSection">
-        <Experience />
+        <Experiences />
       </AreaSection>
     </>
   );

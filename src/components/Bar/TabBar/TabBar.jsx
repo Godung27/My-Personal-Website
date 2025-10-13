@@ -46,7 +46,7 @@ export default function TabBar() {
       />
       <div className={classes.logo}>Parnuvich</div>
       <ul className={classes.menu}>
-        {menuItems.map(({ path, label }) => (
+        {menuItems.map(({ path, label, submenu }) => (
           <li key={path}>
             <a
               href={path}
