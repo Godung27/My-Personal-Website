@@ -44,7 +44,6 @@
 }
 
 .menu > li ul {
-  display: none;
   position: absolute;
   list-style: none;
   top: 90%;
@@ -53,10 +52,16 @@
   width: 170px;
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   border-radius: 6px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
 }
 
 .menu > li:hover ul {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .menu > li ul li {
