@@ -7,7 +7,7 @@ import classes from "./About.module.css"
 export default function () {
   return (
     <>
-      <AreaSection theme="light" id="about">
+      <AreaSection theme="light" topic="mainSection" id="about">
         <h2>About</h2>
         <p className={classes.descriptionAbout}>
           {`Hello! My name is Parnuvich.
