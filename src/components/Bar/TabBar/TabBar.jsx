@@ -46,7 +46,7 @@ export default function TabBar() {
       />
       <div className={classes.logo}>Parnuvich</div>
       <ul className={classes.menu}>
-        {menuItems.map(({ path, label, submenu }) => (
+        {menuItems.map(({ path, label, subMenu }) => (
           <li key={path}>
             <a
               href={path}
@@ -54,7 +54,19 @@ export default function TabBar() {
               className={activeTab === path ? classes.active : ""}
             >
               {label}
+              {subMenu && <span className={classes.dropdownIcon}>⌄</span>}
             </a>
+            {subMenu && (
+              <ul>
+                {subMenu.map(({ path: subPath, label: subLabel }) => (
+                  <li key={subPath}>
+                    <a href={subPath}>
+                      {`- ${subLabel}`}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>

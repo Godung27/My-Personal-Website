@@ -11,7 +11,7 @@
 
 .areaWelcomeText h2 {
   font-size: 72px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0;
   background-image: linear-gradient(#FF4D00, white);
   color: transparent;
@@ -28,7 +28,7 @@
 .areaWelcomeText a {
   font-size: 18px;
   padding: 10px 20px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   border: #FF4D00 solid 2px;
   border-radius: 25px;

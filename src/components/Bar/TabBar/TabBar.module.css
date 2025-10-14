@@ -14,7 +14,7 @@
 .logo {
   padding: 14px;
   color: white;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .scrolled {
@@ -22,6 +22,7 @@
 }
 
 .menu {
+  position: relative;
   display: flex;
   gap: 20px;
   list-style: none;
@@ -30,10 +31,11 @@
 }
 
 .menu a {
+  display: flex;
+  align-items: center;
   color: white;
   padding: 14px 20px;
   text-decoration: none;
-  display: block;
   transition: color 0.3s;
 }
 
@@ -41,8 +43,42 @@
   color: #FF4D00;
 }
 
+.menu > li ul {
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 90%;
+  padding: 5px 0;
+  background-color: white;
+  width: 170px;
+  box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+  border-radius: 6px;
+}
+
+.menu > li:hover ul {
+  display: block;
+}
+
+.menu > li ul li {
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.menu > li ul li:last-child {
+  border-bottom: none;
+}
+
+.menu > li ul a {
+  color: #252525;
+  padding: 10px 20px;
+}
+
 .active {
   border-bottom: 2px solid #FF4D00;
+  color: #FF4D00;
+}
+
+.dropdownIcon {
+  padding-left: 10px;
   color: #FF4D00;
 }
 

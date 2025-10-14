@@ -19,10 +19,10 @@ export default function () {
     My goal is to build applications that are efficient, creative, and impactful.`}
         </p>
       </AreaSection>
-      <AreaSection theme="dark" topic="subSection">
+      <AreaSection theme="dark" topic="subSection" id="skills">
         <Skills />
       </AreaSection>
-      <AreaSection theme="light" topic="subSection">
+      <AreaSection theme="light" topic="subSection" id="experiences">
         <Experiences />
       </AreaSection>
     </>
