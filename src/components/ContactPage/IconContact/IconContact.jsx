@@ -2,7 +2,7 @@ import classes from "./IconContact.module.css"
 
 import GithubIcon from "../../../assets/icon/Contact/Github_icon.svg"
 import GmailIcon from "../../../assets/icon/Contact/Gmail_icon.svg"
-import FacebookIcon from "../../../assets/icon/Contact/Facebook_icon.svg"
+import LinkedinIcon from "../../../assets/icon/Contact/Linkedin_icon.png"
 import InstagramIcon from "../../../assets/icon/Contact/Instagram_icon.svg"
 
 export default function IconContact() {
@@ -18,9 +18,9 @@ export default function IconContact() {
       icon: GmailIcon,
     },
     {
-      label: "Facebook",
-      href: "https://www.facebook.com/share/1D4PiqStuP/?mibextid=wwXlfr",
-      icon: FacebookIcon,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/parnuvich-limtongsittikun-b19392326/",
+      icon: LinkedinIcon,
     },
     {
       label: "Instagram",
