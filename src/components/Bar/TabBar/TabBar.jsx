@@ -44,6 +44,10 @@ export default function TabBar() {
       <SideBar
         isOpenSideBar={isOpenSideBar}
       />
+      {
+        isOpenSideBar &&
+        <div className={classes.overlay} onClick={handleOpenSidebar} />
+      }
       <div className={classes.logo}>Parnuvich</div>
       <ul className={classes.menu}>
         {menuItems.map(({ path, label, subMenu }) => (
