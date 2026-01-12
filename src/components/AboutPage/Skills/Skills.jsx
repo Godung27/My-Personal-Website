@@ -4,6 +4,7 @@ import HtmlIcon from "../../../assets/icon/Skills/HTML5_icon.svg"
 import JavaScriptIcon from "../../../assets/icon/Skills/JavaScript_icon.svg"
 import CssIcon from "../../../assets/icon/Skills/CSS3_icon.svg"
 import ReactIcon from "../../../assets/icon/Skills/React_icon.svg"
+import ReduxIcon from "../../../assets/icon/Skills/Redux_icon.svg"
 
 export default function Skills() {
   const skillItems = [
@@ -25,6 +26,11 @@ export default function Skills() {
     {
       title: "React",
       icon: ReactIcon,
+      description: "",
+    },
+    {
+      title: "Redux",
+      icon: ReduxIcon,
       description: "",
     },
   ]
